@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* == VARIABLES== */
+:root{
+    /* colors */
+    --hue: 240;
+    --grey-light: hsl(var(--hue), 9%, 89%);
+    --grey-normal: hsl(var(--hue), 7%, 78%);
+    --grey-dark: hsl(var(--hue), 6%, 58%);
+    --black: hsl(var(--hue), 6%, 13%);
+    --bg:hsl(var(--hue), 49%, 19%)
+
+
+}
+
+/* == struct == */
+
+html,
+body{
+    background-color: var(--bg);
+    height: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: url("../images/background.svg") no-repeat;
+    height: 812px;
+    width: 375px;
+
+    
+}
+
+.container{
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--grey-light);
+
+    text-align: center;
+}
+/* ==END== */
+
+/* =AVATAR= */
+.avatar{
+    width: 10rem;
+    margin: 11.5rem auto 1.5rem ;
+
+}
+
+.avatar > img{
+    width: 160px;
+    height: 184px;
+    object-fit: cover;
+
+    clip-path: polygon(0 30%, 50% 0, 100% 30%, 100% 70%, 50% 100%, 0 70%);
+}
+
+.avatar span{
+    position: absolute;
+    z-index: 10;
+}
+/* ==END== */
+
+h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--grey-dark);
+
+    margin-top: .25rem;
+
+    display: flex;
+    gap: .25rem;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: .25rem;
+}
+
+p{
+    margin-top: 2rem;
+
+    font-size: .875rem;
+}
+
+ul {
+    margin-top: 4rem;
+    list-style-type: none;
+
+    display: flex;
+    gap:.5rem;
+
+    justify-content: center;
+}
