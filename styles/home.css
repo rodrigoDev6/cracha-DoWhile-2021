@@ -35,10 +35,9 @@ body{
 
 main{
     background: url("../images/background.svg") no-repeat;
+
     height: 812px;
     width: 375px;
-
-    
 }
 
 .container{
