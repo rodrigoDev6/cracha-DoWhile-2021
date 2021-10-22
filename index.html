@@ -28,16 +28,14 @@
         </div>
         <!-- /avatar -->
 
-        <h1>Rodrigo de Lima</h1>
-        <a href="https://github.com/rodrigodev6" target="_blank">
-          <img src="images/github.svg" alt="Icone github" />
-          rodrigodev6</a
-        >
+        <h1 id="userName">Rodrigo de Lima</h1>
+        <a id="userLink" href="https://github.com/rodrigodev6" target="_blank">
+          <img src="images/github.svg" alt="Icone github" /><span
+            id="userLogin"
+          ></span>
+        </a>
 
-        <p>
-          I am a student and technology lover, I like to study and discuss
-          about.
-        </p>
+        <p id="userBio"></p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -67,26 +65,6 @@
       </div>
       <!-- /container -->
     </main>
-    <script>
-      // objeto com os nomes das minhas redes sociais
-      const socialNames = {
-        youtube: 'channel/UCVVGtt-Xf1xrohSIZMtvIHg/about',
-        instagram: 'rodrigodev6',
-        facebook: 'profile.php?id=100005056321629',
-        twitter: 'rodrigo_2200'
-      }
-
-      function changeMediaSocialLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${socialNames[social]}`
-
-          // alert('o link é: ' + li.children[0].href)
-        }
-      }
-
-      changeMediaSocialLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+// objeto com os nomes das minhas redes sociais
+const socialNames = {
+  github: 'rodrigodev6',
+  youtube: 'channel/UCVVGtt-Xf1xrohSIZMtvIHg/about',
+  instagram: 'rodrigodev6',
+  facebook: 'profile.php?id=100005056321629',
+  twitter: 'rodrigo_2200'
+}
+
+function changeMediaSocialLinks() {
+  for (let li of socialLinks.children) {
+    const social = li.getAttribute('class')
+
+    li.children[0].href = `https://${social}.com/${socialNames[social]}`
+
+    // alert('o link é: ' + li.children[0].href)
+  }
+}
+
+function getGitHubProfileInfos() {
+  const url = `https://api.github.com/users/${socialNames.github}`
+
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      userName.textContent = data.name
+      userBio.textContent = data.bio
+      userLink.href = data.html_url
+      userLogin.textContent = data.login
+    })
+}
+
+getGitHubProfileInfos()
+changeMediaSocialLinks()
