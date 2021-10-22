@@ -39,27 +39,27 @@
           about.
         </p>
 
-        <ul>
-          <li>
-            <a href="https://youtube.com" target="_black">
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https://youtube.com/maykbrito" target="_black">
               <img src="images/youtube.svg" alt="" />
             </a>
           </li>
 
-          <li>
-            <a href="https://instagram.com" target="_black">
+          <li class="instagram">
+            <a href="https://instagram.com/maykbrito" target="_black">
               <img src="images/instagram.svg" alt="" />
             </a>
           </li>
 
-          <li>
-            <a href="https://facebook.com" target="_black">
+          <li class="facebook">
+            <a href="https://facebook.com/maykbrito" target="_black">
               <img src="images/facebook.svg" alt="" />
             </a>
           </li>
 
-          <li>
-            <a href="https://twitter.com" target="_black">
+          <li class="twitter">
+            <a href="https://twitter.com/maykbrito" target="_black">
               <img src="images/twitter.svg" alt="" />
             </a>
           </li>
@@ -67,5 +67,24 @@
       </div>
       <!-- /container -->
     </main>
+    <script>
+      // objeto com os nomes das minhas redes sociais
+      const socialNames = {
+        youtube: 'channel/UCVVGtt-Xf1xrohSIZMtvIHg/about',
+        instagram: 'rodrigodev6',
+        facebook: 'profile.php?id=100005056321629',
+        twitter: 'colainerd'
+      }
+
+      function changeMediaSocialLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${socialNames[social]}`
+        }
+      }
+
+      changeMediaSocialLinks()
+    </script>
   </body>
 </html>
