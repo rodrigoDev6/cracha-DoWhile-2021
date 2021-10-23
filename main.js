@@ -1,4 +1,4 @@
-// objeto com os nomes das minhas redes sociais
+// object socialNames
 const socialNames = {
   github: 'rodrigodev6',
   youtube: 'channel/UCVVGtt-Xf1xrohSIZMtvIHg/about',
@@ -12,8 +12,6 @@ function changeMediaSocialLinks() {
     const social = li.getAttribute('class')
 
     li.children[0].href = `https://${social}.com/${socialNames[social]}`
-
-    // alert('o link é: ' + li.children[0].href)
   }
 }
 
