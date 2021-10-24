@@ -145,6 +145,16 @@ ul {
     background-color: #0072b1;
 }
   
+.logo-dowhile{
+    width: 100vw;
+    max-width: 400px;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5rem
+
+}
 
 /* mobile */
 @media screen and (max-width:480px){
@@ -165,4 +175,6 @@ ul {
     .vertical-band {
         display: none;
     }
+
 }
+
