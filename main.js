@@ -4,7 +4,7 @@ const socialNames = {
   youtube: 'channel/UCVVGtt-Xf1xrohSIZMtvIHg/about',
   instagram: 'rodrigodev6',
   facebook: 'profile.php?id=100005056321629',
-  twitter: 'rodrigo_2200'
+  linkedin: 'in/rodrigo-lima1'
 }
 
 function changeMediaSocialLinks() {
