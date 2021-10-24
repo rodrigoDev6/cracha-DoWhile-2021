@@ -26,7 +26,7 @@ body{
 }
 
 body{
-    background: url('../images/degrade.png') no-repeat center #121214;
+   background: url('../images/degrade.png') no-repeat center #121214;
 
     display: grid;
     place-items: center;
@@ -51,6 +51,8 @@ main{
     position: fixed;
     top: 0;
 }
+
+
 
 .container{
     max-width: 16.625rem;
@@ -108,6 +110,7 @@ p{
 
 ul {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     list-style: none;
     padding: 0;
     
@@ -117,6 +120,7 @@ ul {
     justify-content: center;
 }
 
+/* Links efects */
 .youtube {
     text-align: center;
     background-color: #323238;
@@ -144,17 +148,6 @@ ul {
 .linkedin:hover {
     background-color: #0072b1;
 }
-  
-.logo-dowhile{
-    width: 100vw;
-    max-width: 400px;
-    margin: 0 auto;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 5rem
-
-}
 
 /* mobile */
 @media screen and (max-width:480px){
@@ -175,6 +168,5 @@ ul {
     .vertical-band {
         display: none;
     }
-
 }
 
